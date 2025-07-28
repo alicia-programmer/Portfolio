@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  font-weight: 380;
+  font-size: 15px;
+}
+
+.widthContainer {
+  width: 85%;
+  margin: auto;
+}
+@media screen and (min-width: 1300px) {
+  .widthContainer {
+    width: 1200px;
+  }
+}
+
+/*-------------------------------------
+        1. Navbar 
+--------------------------------------*/
+.nav_container {
+  position: fixed;
+  background: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 5px grey;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_content h2 a {
+  text-decoration: none;
+  color: #000;
+}
+.nav_menu {
+  display: flex;
+}
+.nav_menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+.nav_menu a:last-child {
+  margin: 0 0 0 10px;
+}
+.nav_menu a:hover {
+  color: #ff4500;
+}
+.dropdown i {
+  font-size: 35px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .dropdown i {
+    display: block;
+  }
+  .nav_menu {
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    text-align: right;
+    padding: 3% 0 4%;
+    width: 100%;
+    background: #023d51;
+  }
+  .nav_menu a {
+    color: #fff;
+    margin: 5px 30px 5px 0;
+  }
+  .nav_menu a:last-child {
+    margin: 6px 30px 5px 0;
+  }
+  .nav_menu.show {
+    visibility: visible;
+    transition: 0.3s;
+  }
+}
+/*-------------------------------------
+     2. Background image main image
+--------------------------------------*/
+.main_container {
+  padding: 1% 0;
+  background-image: linear-gradient(#00000099), url("pic/website12.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+}
+.main_content {
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.main_item {
+  text-align: right;
+  padding: 4% 0;
+}
+.main_item h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.main_item p {
+  font-size: 25px;
+  color: #fff;
+  width: 60%;
+  font-weight: 300;
+  margin: 2% 0 7% auto;
+}
+.main_item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: orangered;
+  border: none;
+  outline: none;
+  padding: 9px 23px;
+  transition: ease 0.5s;
+  box-shadow: 0 0px 10px rgba(21, 19, 19, 0.1);
+}
+
+/*-------------------------------------
+      3. Enquiries 
+--------------------------------------*/
+.enquiry {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023d51;
+}
+.enquiry_content {
+  text-align: center;
+}
+.enquiry_content p {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 9%;
+}
+.enquiry_content a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 35px;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+.enquiry_content a:hover {
+  color: #ff4500;
+  border: 1px solid orangered;
+}
+
+/*-------------------------------------
+     4. START OF SERVICES SECTION
+--------------------------------------*/
+.services_container {
+  padding: 5% 0;
+}
+.services_frame {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services_content {
+}
+.services_items {
+  box-shadow: 0 0 5px silver;
+  background: #fff;
+  text-align: left;
+  padding: 50px 42px;
+  border-radius: 3px;
+  box-shadow: 0 0px 5px rgba(71, 71, 71, 0.2);
+  margin: 0 20px 30px;
+  width: 300px;
+  height: auto;
+}
+.services_items h2 a {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 35px 0 20px;
+  text-decoration: none;
+  color: #023d51;
+}
+.services_items h2 a span {
+  text-transform: lowercase;
+}
+.services_items p {
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  text-transform: initial;
+}
+.services_items .service_link {
+  text-decoration: none;
+  color: #ff4500;
+  padding: 10px 0;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.services_items .service_link i {
+  margin-left: 7px;
+  font-size: 20px;
+}
+.services_items .service_link:hover {
+  color: #023d51;
+}
+.services_items:hover {
+  box-shadow: 0 0 7px silver;
+}
+@media screen and (max-width: 425px) {
+  .services_items {
+    width: auto;
+    padding: 6%;
+    margin: 0 0 30px;
+  }
+}
+
+/*-------------------------------------
+     5. PORTFOLIO
+--------------------------------------*/
+.portfolio_container {
+  background-image: linear-gradient(#00000033), url("pic/pic2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 5% 0;
+}
+.portfolio_frame {
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.portfolio_content {
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  background: #ffffffaa;
+  width: 650px;
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+}
+.portfolio_items {
+  text-align: right;
+}
+.port_change {
+  text-align: center;
+}
+.portfolio_items img {
+  width: 80%;
+  height: auto;
+  transition: 0.3s;
+}
+.port_change img {
+  width: 60%;
+}
+.portfolio_items img:hover {
+  transform: scale(1.01);
+  background: #fff;
+}
+@media screen and (max-width: 500px) {
+  .portfolio_container {
+    padding: 7% 0;
+  }
+  .portfolio_content {
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+  .portfolio_items img {
+    width: 70%;
+  }
+  .port_change img {
+    width: 55%;
+  }
+  .portfolio_items {
+    text-align: center;
+  }
+  .port_change {
+    text-align: center;
+  }
+}
+
+/*-------------------------------------
+     6. ABOUT
+--------------------------------------*/
+.about_container {
+  background: #fff;
+  padding: 5%;
+}
+.about_frame {
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about_content {
+  display: flex;
+  align-items: center;
+}
+.about_content h2 {
+  font-weight: 500;
+}
+.about_content p {
+  margin-left: 30px;
+  border-left: 3px solid silver;
+  padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  .about_container {
+    padding: 10% 0;
+  }
+  .about_frame {
+    flex-direction: column;
+  }
+  .about_content h2 {
+    margin-bottom: 15%;
+  }
+  .about_content p {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+/*-------------------------------------
+     7. CONTACT
+--------------------------------------*/
+.contact_container {
+  background-image: linear-gradient(#00000088), url("pic/pic3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.contact_frame {
+  height: inherit;
+  padding: 3%;
+  backdrop-filter: blur(3px);
+}
+.contact_content {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+}
+.contact_content h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.contact_items {
+  width: 250px;
+}
+.contact_items a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+  margin: 5px 0;
+}
+.contact_items a i {
+  font-size: 25px;
+  background: #023d51;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.contact_items a:hover {
+  color: #ff4500;
+}
+@media screen and (max-width: 500px) {
+  .contact_frame {
+    padding: 7%;
+  }
+  .contact_items {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------
+     8. START OFCREATED
+--------------------------------------*/
+.created {
+  background: #023d51;
+  color: #fff;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.created a {
+  color: #ff4500;
+  text-decoration: none;
+  z-index: 5;
+}

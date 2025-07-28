@@ -1,78 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <!-- meta data -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="style.css" />
     <!-- box icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- Fontawesome icons -->
-    <script
-      src="https://kit.fontawesome.com/ec07579393.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.10.1/css/all.min.css"
-    />
-
-    <!-- Page title -->
-    <title>Portfolio | Home</title>
-
-    <!-- Main style sheets -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Navbar CSS -->
-    <link rel="stylesheet" href="css/menu.css" />
-    <!-- Footer CSS -->
-    <link rel="stylesheet" href="css/footer.css" />
-    <!-- Media querie CSS -->
-    <!-- Navbar media querie -->
-    <link rel="stylesheet" href="css/media menu.css" />
-    <!-- Footer media querie -->
-    <link rel="stylesheet" href="css/media footer.css" />
-    <!-- Index page media querie -->
-    <link rel="stylesheet" href="css/mediastyle.css" />
-
-    <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Alicia Programmer</title>
   </head>
-
-  <!-- Body start -->
   <body>
-    <!-- Scroll to top button -->
-    <button title="Scroll to top" id="scroll_btn" onclick="topFunction()">
-      <i class="bx bx-chevrons-up"></i>
-    </button>
-
     <!-- Navbar menu start-->
     <div class="nav_container" id="nav_container">
-      <div class="nav_content">
-        <!-- Navbar menu list-->
-        <div class="nav_menu">
-          <a href="index.html">Home</a>
-          <a href="index.html#Services">Services</a>
-          <a href="index.html#Portfolio">Portfolio</a>
+      <div class="widthContainer">
+        <div class="nav_content">
+          <!-- Navbar menu list-->
+          <h2>
+            <a href="index.html"
+              >Alicia<br />
+              Programmer</a
+            >
+          </h2>
+          <div class="dropdown" id="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+          <div class="nav_menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html#Services">Services</a>
+            <a href="index.html#Portfolio">Portfolio</a>
+            <a href="index.html#Contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
     <!-- Navbar menu end-->
 
     <!-- Background image start -->
-    <div class="bg_img">
-      <div class="bg_content">
-        <div class="container">
-          <!-- Background image heading and text -->
-          <div class="bg_text_inside">
-            <h2>Alicia Programmer</h2>
+    <div class="main_container">
+      <div class="widthContainer">
+        <div class="main_content">
+          <div class="main_item">
             <p>
-              In Everything You Do <br />
-              Do your <big><span style="color: #ff545a">BEST.</span></big>
+              In Everything You Do. Do your
+              <big>
+                <span style="color: orangered; font-weight: bold"> BEST. </span>
+              </big>
             </p>
+            <a href="#Services">Learn more</a>
           </div>
         </div>
       </div>
@@ -81,293 +57,200 @@
 
     <!-- Enquirie start-->
     <div class="enquiry">
-      <div class="enquired">
-        <p>Contact on the number below:</p>
-        <a href="https://wa.me/+27780115170/" target="_blank">+27 78 011 5170</a
-        ><!-- Enquirie contact number-->
+      <div class="enquiry_content">
+        <p>Contact us:</p>
+        <a href="https://wa.me/+27688187159/" target="_blank"
+          >+27 68 818 7159</a
+        >
       </div>
     </div>
     <!-- Enquirie end-->
 
-    <!-- Works Services start-->
-    <section id="Services" class="works">
-      <div class="container">
-        <!-- container-->
-        <div class="works-content">
-          <div class="row">
-            <!-- Services container div-->
-            <div class="col-md-4 col-sm-6">
-              <div class="single-how-works">
-                <!-- <div class="single-how-works-icon">
-									<i class="bx bx-check-shield" style="font-size: 60px; color: green;"></i>
-								</div> -->
-                <h2>
-                  <a href="#">Web <span> Development</span></a>
-                </h2>
-                <p>
-                  Get your very own website and create your presence online with
-                  our developers. Let us create for you what you are looking
-                  for, from the ground up.
-                </p>
-              </div>
+    <!--  Stat of Services -->
+    <div class="services_container" id="Services">
+      <div class="widthContainer">
+        <div class="services_frame">
+          <div class="services_content">
+            <div class="services_items">
+              <h2>
+                <a href="#">Web <span> Development</span></a>
+              </h2>
+              <br />
+              <p>
+                Get your very own website and create your presence online with
+                our developers. Let us create for you what you are looking for,
+                from the ground up.
+              </p>
+              <a
+                href="mailto:alicia_programmer@outlook.com"
+                class="service_link"
+              >
+                Enquire <i class="bx bx-right-arrow-alt"></i>
+              </a>
             </div>
-            <!-- Services container div-->
-            <div class="col-md-4 col-sm-6">
-              <div class="single-how-works">
-                <!-- <div class="single-how-works-icon">
-									<i class="bx bx-check-shield" style="font-size: 60px; color: green;"></i>
-								</div> -->
-                <h2>
-                  <a href="#">Website maintenance <span> and support</span></a>
-                </h2>
-                <p>
-                  To keep a website secure, functional, and up-to-date. We offer
-                  website maintenance and support ensuring your website runs
-                  smoothly and efficiently, providing a positive user experience
-                  and protecting your online presence.
-                </p>
-              </div>
+            <div class="services_items">
+              <h2>
+                <a href="#">Website maintenance <span> and support</span></a>
+              </h2>
+              <br />
+              <p>
+                To keep a website secure, functional, and up-to-date. We offer
+                website maintenance and support ensuring your website runs
+                smoothly and efficiently, providing a positive user experience
+                and protecting your online presence.
+              </p>
+              <a
+                href="mailto:alicia_programmer@outlook.com"
+                class="service_link"
+              >
+                Enquire<i class="bx bx-right-arrow-alt"></i>
+              </a>
             </div>
-            <!-- Services container div-->
-            <div class="col-md-4 col-sm-6">
-              <div class="single-how-works">
-                <!-- <div class="single-how-works-icon">
-									<i class="bx bx-check-shield" style="font-size: 60px; color: green;"></i>
-								</div> -->
-                <h2>
-                  <a href="#">Custom made <span>designs</span></a>
-                </h2>
-                <p>
-                  For creativity and beauty let our designers design for you a
-                  unique piece of art that will set you apart from the rest.
-                  Through logos, posters, wallpapers and other designs
-                </p>
-              </div>
+          </div>
+          <div class="services_content">
+            <div class="services_items">
+              <h2>
+                <a href="#">Custom made <span>designs</span></a>
+              </h2>
+              <br />
+              <p>
+                Showcase your brand's personality, voice, and values. With
+                designes that are tailored to meet your audience's needs and
+                enhance user experience. A website that stands out, unique only
+                to you!
+              </p>
+              <a
+                href="mailto:alicia_programmer@outlook.com"
+                class="service_link"
+              >
+                Enquire<i class="bx bx-right-arrow-alt"></i>
+              </a>
             </div>
-            <!-- Services container div-->
-            <div class="col-md-4 col-sm-6">
-              <div class="single-how-works">
-                <!-- <div class="single-how-works-icon">
-									<i class="bx bx-check-shield" style="font-size: 60px; color: green;"></i>
-								</div> -->
-                <h2>
-                  <a href="#">Mobile responsive <span>designs</span></a>
-                </h2>
-                <p>
-                  We optimized website's for mobile devices, so that you will
-                  not risk losing visibility in search results, as Google
-                  prioritizes mobile-friendly sites for indexing and ranking.
-                </p>
-              </div>
+            <div class="services_items">
+              <h2>
+                <a href="#">Mobile responsive <span>designs</span></a>
+              </h2>
+              <br />
+              <p>
+                We optimized website's for mobile devices, so that you will not
+                risk losing visibility in search results, as Google prioritizes
+                mobile-friendly sites for indexing and ranking.
+              </p>
+              <a
+                href="mailto:alicia_programmer@outlook.com"
+                class="service_link"
+              >
+                Enquire<i class="bx bx-right-arrow-alt"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!--/.container-->
-    </section>
-    <!-- Works Services end-->
+    </div>
+    <!-- End of Services -->
 
-    <!-- Portfolio start-->
-    <div class="web_item2" id="Portfolio">
-      <!-- Portfolio heading-->
-      <h2>Portfolio</h2>
-      <div class="portfolio_container">
-        <div class="por_1">
-          <div class="first_place">
-            <!-- Portfolio sub div contaner-->
-            <div class="portfolio_content">
-              <a
-                href="https://alicia-programmer.github.io/Hydro/"
-                target="_blank"
-                ><img src="pic/img1.png" /></a
-              ><!-- Portfolio img-->
-              <div class="overlay_anchors">
-                <a
-                  href="https://alicia-programmer.github.io/Hydro/"
-                  target="_blank"
-                  class="anchors"
-                  >View website</a
-                ><!-- Portfolio link-->
-              </div>
-            </div>
-            <!-- Portfolio sub div contaner-->
-            <!-- <div class="portfolio_content">
-              <a
-                href="https://alicia-programmer.github.io/SwimmingClub/"
-                target="_blank"
-                ><img src="pic/img2.png" /></a
-              >
-              <div class="overlay_anchors">
-                <a
-                  href="https://alicia-programmer.github.io/SwimmingClub/"
-                  target="_blank"
-                  class="anchors"
-                  >View website</a
-                >
-              </div>
-            </div> -->
-          </div>
-          <div class="second_place">
-            <!-- Portfolio sub div contaner-->
-            <div class="portfolio_content">
-              <a
-                href="https://alicia-programmer.github.io/Sauce/"
-                target="_blank"
-                ><img src="pic/img3.png" /></a
-              ><!-- Portfolio img-->
-              <div class="overlay_anchors">
-                <a
-                  href="https://alicia-programmer.github.io/Sauce/"
-                  target="_blank"
-                  class="anchors"
-                  >View website</a
-                ><!-- Portfolio link-->
-              </div>
-            </div>
-            <!-- Portfolio sub div contaner-->
-            <div class="portfolio_content">
+    <!-- Start of Portfolio -->
+    <div class="portfolio_container" id="Portfolio">
+      <div class="widthContainer">
+        <div class="portfolio_frame">
+          <div class="portfolio_content">
+            <div class="portfolio_items">
               <a
                 href="https://alicia-programmer.github.io/Pine-City-Zoo/"
                 target="_blank"
-                ><img src="pic/logo3.png" /></a
-              ><!-- Portfolio img-->
-              <div class="overlay_anchors">
-                <a
-                  href="https://alicia-programmer.github.io/Pine-City-Zoo/"
-                  target="_blank"
-                  class="anchors"
-                  >View website</a
-                ><!-- Portfolio link-->
-              </div>
+                ><img src="pic/logo3.png"
+              /></a>
+            </div>
+            <div class="portfolio_items">
+              <a
+                href="https://alicia-programmer.github.io/Hydro/"
+                target="_blank"
+              >
+                <img src="pic/img1.png" />
+              </a>
+            </div>
+            <div class="portfolio_items port_change">
+              <a
+                href="https://alicia-programmer.github.io/Sauce/"
+                target="_blank"
+                ><img src="pic/img3.png"
+              /></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Portfolio end-->
+    <!-- End of Portfolio -->
 
-    <!-- Application dev start-->
-    <div class="web_design">
-      <div class="web_design_frame">
-        <div class="container">
-          <div class="display_flex">
-            <!-- Application dev heading-->
-            <div class="web_design1">
-              <h2>Responsive designs</h2>
-              <p>
-                We also work with website layouts and visual appeal and ensuring
-                it gives the best results whilst making it easy to navigate.
-              </p>
-              <br /><br />
-              <!-- Application dev packages link-->
-              <div class="web_button">
-                <a href="#Portfolio">View Portfolio</a>
-              </div>
-            </div>
-            <!-- Application dev cellphone image -->
-            <div class="web_design1">
-              <div class="web_img">
-                <img src="pic/img4.png" alt="" />
-              </div>
-            </div>
+    <!-- Start of About -->
+    <div class="about_container" id="About">
+      <div class="widthContainer">
+        <div class="about_frame">
+          <div class="about_content">
+            <h2>About</h2>
+          </div>
+          <div class="about_content">
+            <p>
+              We’re a team of web developers, designers, and digital thinkers
+              who believe that great code and great design go hand-in-hand. We
+              craft digital experiences that are fast, functional, and
+              memorable. Our work blends clean, scalable code with thoughtful
+              design, always tailored to the unique needs of the people we build
+              for. We collaborate closely, think creatively, and never lose
+              sight of the human side of digital!
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Application dev end-->
+    <!-- End of About -->
 
-    <!-- Get a quote start -->
-    <div class="quote_container">
-      <div class="container quote_content">
-        <!-- Get a quote heading -->
-        <div class="quote_para">
-          <h2>Get in touch</h2>
-          <p>
-            Contact me via whatsapp or email or call me on the number provided.
-          </p>
-        </div>
-        <!--fGet a quote link butoons -->
-        <div class="quote_button">
-          <div>
-            <a href="https://wa.me/+27780115170/" target="_blank" id="quotation"
-              >Whatsapp</a
-            >
-          </div>
-          <div>
-            <a href="mailto:makhabo.kutu@gmail.com">Email</a>
+    <!-- Start of Contact -->
+    <div class="contact_container" id="Contact">
+      <div class="contact_frame">
+        <div class="widthContainer">
+          <div class="contact_content">
+            <div class="contact_items">
+              <h2>Contact us..</h2>
+            </div>
+            <div class="contact_items">
+              <a href="mailto:alicia_programmer@outlook.com">
+                <i class="bx bx-envelope"></i>
+                Alicia_Programmer
+              </a>
+            </div>
+            <div class="contact_items">
+              <a href="https://wa.me/+27688187159/">
+                <i class="bx bxl-whatsapp"></i>
+                +27 68 818 7159
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Get a quote end -->
+    <!-- End of Contact -->
+
+    <!-- Created by -->
+    <div class="created">
+      <p>
+        Created by
+        <a href="mailto:alicia_programmer@outlook.com">Alicia_Programmer</a>
+      </p>
+    </div>
+
+    <script>
+      let menu = document.querySelector("#menu");
+      let icon = menu.querySelector(".bx-menu");
+
+      menu.addEventListener("click", () => {
+        if (icon.classList.contains("bx-menu")) {
+          icon.classList.replace("bx-menu", "bx-x");
+        } else {
+          icon.classList.replace("bx-x", "bx-menu");
+        }
+        document.querySelector(".nav_menu").classList.toggle("show");
+      });
+    </script>
   </body>
-  <!--Body end -->
-
-  <!--footer start -->
-  <footer>
-    <div class="footer">
-      <div class="footer_content">
-        <div class="container">
-          <div class="address">
-            <!--Get in touch with developer -->
-            <div class="add_icons">
-              <p>
-                Design by
-                <a href="mailto:makhabo.kutu@gmail.com">Alicia Programmer</a>
-              </p>
-            </div>
-            <!--get in touch with Webblinks -->
-            <div class="add_icons">
-              <p>+27 78 011 5170</p>
-              <p>
-                Email:
-                <a href="mailto:makhabo.kutu@gmail.com">Alicia Programmer</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--footer end -->
-
-  <!--link for javaScript -->
-  <script src="js/java.js"></script>
-  <!-- Script for whatsapp chatbot -->
-  <script
-    async
-    src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"
-  ></script>
-  <script>
-    var wa_btnSetting = {
-      btnColor: "#6D3190",
-      ctaText: "",
-      cornerRadius: 40,
-      marginBottom: 20,
-      marginLeft: 20,
-      marginRight: 20,
-      btnPosition: "left",
-      whatsAppNumber: "27780115170",
-      welcomeMessage: "How can we help you",
-      zIndex: 999999,
-      btnColorScheme: "light",
-    };
-    var wa_widgetSetting = {
-      title: "Webblinks",
-      subTitle: "Let your presence be felt",
-      headerBackgroundColor: "#00008b",
-      headerColorScheme: "light",
-      greetingText: "Hi there! \nHow can I help you?",
-      ctaText: "Talk to us",
-      btnColor: "#00008b",
-      cornerRadius: 40,
-      welcomeMessage: "Hello",
-      btnColorScheme: "light",
-      brandImage: "pic/web-top.png",
-      darkHeaderColorScheme: { title: "#333333", subTitle: "#4F4F4F" },
-    };
-    window.onload = () => {
-      _waEmbed(wa_btnSetting, wa_widgetSetting);
-    };
-  </script>
 </html>
